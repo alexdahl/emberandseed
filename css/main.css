@@ -1,0 +1,11 @@
+body {
+  padding-top: 30vh;
+  text-align: center;
+  font-family: -apple-system, sans-serif;
+  -webkit-text-size-adjust: none;
+  color: white;
+  background: gray;
+}
+p {
+  opacity: 0.75;
+}
