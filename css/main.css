@@ -1,10 +1,14 @@
 body {
   padding-top: 30vh;
   text-align: center;
-  font-family: -apple-system, sans-serif;
+  font-family: "industry", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-text-size-adjust: none;
   color: white;
   background: gray;
+}
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 p {
   opacity: 0.75;
