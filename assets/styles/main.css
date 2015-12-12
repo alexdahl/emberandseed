@@ -1,15 +1,21 @@
 body {
-  padding-top: 20vh;
+  margin: 0;
+  padding: 0;
   font-size: 100%;
   font-family: "industry", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-text-size-adjust: none;
   color: white;
-  background: gray;
+  background: #918060;
 }
 .container {
-  margin: 0 auto;
-  max-width: 80%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 20vh 20% 0;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
+  background: url('../images/cover.jpg') center #918060;
+  background-size: cover;
 }
 h1 {
   font-weight: 300;
