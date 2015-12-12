@@ -1,0 +1,47 @@
+body {
+  padding-top: 20vh;
+  font-size: 100%;
+  font-family: "industry", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-text-size-adjust: none;
+  color: white;
+  background: gray;
+}
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
+}
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h1 img {
+  max-width: 90%;
+}
+p {
+  margin-top: 2rem;
+  font-family: "adelle", Georgia, serif;
+  font-style: italic;
+  opacity: 0.75;
+}
+ul.social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul.social li {
+  display: inline-block;
+}
+ul.social li a {
+  padding: 0.25em;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    text-align: left;
+  }
+}
+
