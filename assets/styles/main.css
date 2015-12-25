@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: "industry", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "adelle", Georgia, serif;
+  font-weight: 300;
   -webkit-text-size-adjust: none;
   color: white;
   background: #918060;
@@ -10,12 +11,13 @@ body {
 .container {
   box-sizing: border-box;
   margin: 0;
-  padding: 20vh 20% 0;
+  padding: 10vh 15% 0;
   width: 100vw;
   height: 100vh;
   text-align: center;
   background: url('../images/cover.jpg') center #918060;
   background-size: cover;
+  background-attachment: fixed;
 }
 h1 {
   font-weight: 300;
@@ -24,9 +26,27 @@ h1 {
 h1 img {
   max-width: 90%;
 }
-p {
+
+.subscribe {
+  margin: 3rem 0;
+}
+#mc_embed_signup {
+  clear: left;
+  margin: 0 auto;
+  max-width: 550px;
+}
+#mc_embed_signup form {
+  padding: 0 !important;
+}
+#mc_embed_signup input.email,
+#mc_embed_signup input.button {
+  width: 100% !important;
+}
+
+
+.tagline {
   margin-top: 2rem;
-  font-family: "adelle", Georgia, serif;
+  font-size: 0.85rem;
   font-style: italic;
   opacity: 0.75;
 }
@@ -46,8 +66,5 @@ ul.social li a {
 }
 
 @media only screen and (min-width: 600px) {
-  .container {
-    text-align: left;
-  }
 }
 
