@@ -6,11 +6,10 @@
     <title>Ember + Seed</title>
     <meta name="description" content="Ember and Seed handcrafts soy candles in The Sunset, San Francisco.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/fonts/ss-social-circle/ss-social-circle.css">
     <script src="https://use.typekit.net/bkx6dbu.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 
@@ -22,9 +21,8 @@
       </div>
     </header>
 
-    <div class="container">
-
-      <section class="shop">
+    <section class="shop">
+      <div class="container">
         <h4>Our Shop</h4>
         <div class="products">
           <a class="product-card" href="http://google.com">
@@ -69,7 +67,10 @@
           </a>
         </div>
         <div class="clearfix"></div>
-      </section>
+      </div>
+    </section>
+
+    <div class="container">
 
       <section class="story">
         <h4>Our Story</h4>
@@ -84,31 +85,35 @@
         <div class="clearfix"></div>
       </section>
 
+      <section class="subscribe">
+        <p>Don&rsquo;t miss our limited releases.</p>
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+        <form action="//emberandseed.us12.list-manage.com/subscribe/post?u=9a74c97e2ad29c0ce6e360495&amp;id=2066ef3b23" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+
+        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9a74c97e2ad29c0ce6e360495_2066ef3b23" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            </div>
+        </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </section>
+
       <footer>
+        <p class="text-muted">&copy; 2016</p>
         <ul class="social">
           <li>
-            <a class="ss-icon ss-social-circle" href="https://www.instagram.com/emberandseed/">Instagram</a>
+            <a href="https://www.instagram.com/emberandseed/"><img src="assets/images/instagram.svg" width="20" alt="Instagram"></a>
           </li>
           <li>
-            <a class="ss-icon ss-social-circle" href="https://www.facebook.com/emberandseed/">Facebook</a>
+            <a href="https://www.facebook.com/emberandseed/"><img src="assets/images/facebook.svg" width="20" alt="Facebook"></a>
           </li>
         </ul>
-        <div class="subscribe">
-          <p>Don&rsquo;t miss our limited releases.</p>
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
-          <form action="//emberandseed.us12.list-manage.com/subscribe/post?u=9a74c97e2ad29c0ce6e360495&amp;id=2066ef3b23" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9a74c97e2ad29c0ce6e360495_2066ef3b23" tabindex="-1" value=""></div>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </div>
-          </form>
-          </div>
-          <!--End mc_embed_signup-->
-        </div>
-        <small class="text-muted">&copy; 2016</small>
+
+        <div class="clearfix"></div>
       </footer>
 
     </div>

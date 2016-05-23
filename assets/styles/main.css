@@ -6,7 +6,7 @@ body {
   font-weight: 300;
   -webkit-text-size-adjust: none;
   color: #333;
-  background: white;
+  background: #f2f2f2;
 }
 div {
   box-sizing: border-box;
@@ -24,13 +24,19 @@ h2 {
   font-style: italic;
 }
 h4 {
+  font-size: 1.2rem;
   font-family: "industry", "adelle-sans", "Avenir Next", "Avenir", sans-serif;;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 200;
 }
 a {
   color: #86754d;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
 }
 .text-muted {
   opacity: 0.75;
@@ -62,12 +68,14 @@ header h1 {
   text-align: center;
 }
 
+.shop {
+  background: white;
+}
 .shop .product-card {
   display: block;
   margin-bottom: 2rem;
   text-decoration: none;
   color: #86754d;
-  background: white;
 }
 .shop .product-card:hover .product-description,
 .shop .product-card:focus .product-description {
@@ -99,42 +107,61 @@ header h1 {
   -webkit-filter: grayscale(95%);
 }
 
-
 .subscribe {
-  margin: 3rem 0;
+  text-align: center;
 }
 #mc_embed_signup {
   clear: left;
   margin: 0 auto;
   max-width: 550px;
 }
-#mc_embed_signup form {
-  padding: 0 !important;
+#mc_embed_signup input.email {
+  font-family: "adelle-sans", "Avenir Next", "Avenir", sans-serif;
+  border-radius: 0;
+  outline: 0;
 }
-#mc_embed_signup input.email,
-#mc_embed_signup input.button {
-  width: 100% !important;
+#mc_embed_signup input.email:focus {
+  border-color: #808080;
+}
+#mc_embed_signup .button {
+  border-radius: 0;
+  background-color: #c7ad71;
+  transition-duration: 0.08s;
+}
+#mc_embed_signup .button:hover {
+  background-color: #86754d;
 }
 
-
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0 4rem;
+  color: #86754d;
+  border-top: 1px solid #c7ad71;
+}
+footer p {
+  float: left;
+  margin: 0;
+}
 ul.social {
+  float: right;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 ul.social li {
   display: inline-block;
+  padding: 0 0.5rem;
 }
 ul.social li a {
-  padding: 0.25em;
-  font-size: 1.5em;
+  display: block;
   text-decoration: none;
+  opacity: 0.66;
+  transition-property: opacity;
+  transition-duration: 0.08s;
 }
-
-footer {
-  margin-top: 2rem;
-  padding: 2rem 0;
-  border-top: 1px solid #c7ad71;
+ul.social li a:hover,
+ul.social li a:focus {
+  opacity: 1;
 }
 
 
