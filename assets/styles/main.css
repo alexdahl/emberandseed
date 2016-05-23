@@ -31,12 +31,14 @@ h4 {
   font-weight: 200;
 }
 a {
-  color: #86754d;
+  color: #c7ad71;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.08s;
 }
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color: #86754d;
 }
 .text-muted {
   opacity: 0.75;
@@ -74,12 +76,6 @@ header h1 {
 .shop .product-card {
   display: block;
   margin-bottom: 2rem;
-  text-decoration: none;
-  color: #86754d;
-}
-.shop .product-card:hover .product-description,
-.shop .product-card:focus .product-description {
-  text-decoration: underline;
 }
 .shop .product-card .product-image {
   line-height: 0;
@@ -162,6 +158,10 @@ ul.social li a {
 ul.social li a:hover,
 ul.social li a:focus {
   opacity: 1;
+}
+ul.social .mail {
+  position: relative;
+  top: 2px;
 }
 
 
