@@ -2,30 +2,103 @@ body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: "adelle", Georgia, serif;
+  font-family: "adelle-sans", "Avenir Next", "Avenir", sans-serif;
   font-weight: 300;
   -webkit-text-size-adjust: none;
-  color: white;
-  background: #918060;
+  color: #333;
+  background: white;
 }
-.container {
+div {
   box-sizing: border-box;
-  margin: 0;
-  padding: 10vh 15% 0;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  background: url('../images/cover.jpg') center #918060;
-  background-size: cover;
-  background-attachment: fixed;
+}
+.clearfix {
+  clear: both;
 }
 h1 {
+  margin: 0;
   font-weight: 300;
   text-transform: uppercase;
 }
-h1 img {
-  max-width: 90%;
+h2 {
+  font-weight: 300;
+  font-style: italic;
 }
+h4 {
+  font-family: "industry", "adelle-sans", "Avenir Next", "Avenir", sans-serif;;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+a {
+  color: #86754d;
+}
+.text-muted {
+  opacity: 0.75;
+}
+::selection {
+  background: #c7ad71;
+}
+
+.container {
+  padding: 0 1rem;
+}
+section {
+  padding: 2rem 0;
+}
+
+header {
+  padding: 1rem 0 0.75rem;
+  height: 66vh;
+  text-align: center;
+  background: url('../images/hero.jpg') center #808080;
+  background-size: cover;
+  box-shadow: 0 0 5rem rgba(0,0,0,0.25) inset;
+}
+header h1 {
+  border-bottom: 1px solid white;
+}
+
+.intro {
+  text-align: center;
+}
+
+.shop .product-card {
+  display: block;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: #86754d;
+  background: white;
+}
+.shop .product-card:hover .product-description,
+.shop .product-card:focus .product-description {
+  text-decoration: underline;
+}
+.shop .product-card .product-image {
+  line-height: 0;
+}
+.shop .product-card .product-image img {
+  width: 100%;
+}
+.shop .product-card .product-description {
+  position: relative;
+  padding: 0.8rem 0 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.story .feed {
+  margin: 2rem -8px 0;
+  filter: grayscale(95%);
+  -webkit-filter: grayscale(95%);
+}
+.story .right {
+  height: 200px;
+  background: url('../images/portrait.jpg') center #808080;
+  background-size: cover;
+  filter: grayscale(95%);
+  -webkit-filter: grayscale(95%);
+}
+
 
 .subscribe {
   margin: 3rem 0;
@@ -44,12 +117,6 @@ h1 img {
 }
 
 
-.tagline {
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  font-style: italic;
-  opacity: 0.75;
-}
 ul.social {
   margin: 0;
   padding: 0;
@@ -62,9 +129,70 @@ ul.social li a {
   padding: 0.25em;
   font-size: 1.5em;
   text-decoration: none;
-  color: white;
 }
 
-@media only screen and (min-width: 600px) {
+footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid #c7ad71;
 }
 
+
+@media only screen and (min-width: 768px) {
+
+  .container {
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  header {
+    height: 75vh;
+    background-attachment: fixed;
+  }
+
+  .shop .product-card {
+    float: left;
+    margin-right: 1rem;
+    width: 30%;
+  }
+  .shop .product-card:last-child {
+    margin-right: 0;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  .container {
+    width: 800px;
+  }
+
+  .story {
+    position: relative;
+  }
+  .story .left {
+    float: left;
+    padding-right: 2rem;
+    width: 50%;
+  }
+  .story .right {
+    position: absolute;
+    right: 0;
+    bottom: 2.75rem;
+    width: 50%;
+    height: 70%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .container {
+    width: 1100px;
+  }
+
+  .shop .product-card {
+    width: 18.75%;
+  }
+
+}
