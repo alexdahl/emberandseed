@@ -121,6 +121,7 @@ header h1 {
   border-color: #808080;
 }
 #mc_embed_signup .button {
+  -webkit-appearance: none;
   border-radius: 0;
   background-color: #c7ad71;
   transition-duration: 0.08s;
