@@ -216,7 +216,7 @@ ul.social li a:focus {
     right: 0;
     bottom: 2.75rem;
     width: 50%;
-    height: 70%;
+    height: 77%;
   }
 
 }
@@ -229,6 +229,10 @@ ul.social li a:focus {
 
   .shop .product-card {
     width: 18.75%;
+  }
+
+  .story .right {
+    height: 75%;
   }
 
 }
