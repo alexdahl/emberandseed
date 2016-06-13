@@ -59,7 +59,7 @@ header {
   padding: 1rem 0 0.75rem;
   height: 66vh;
   text-align: center;
-  background: url('../images/hero5.jpg') center #808080;
+  background: url('../images/hero.jpg') center #808080;
   background-size: cover;
   box-shadow: 0 0 5rem rgba(127,127,127,0.25) inset;
 }
